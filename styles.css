@@ -1,2 +1,26 @@
+/* Center all buttons on the page */
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: #f8f9fa; /* light background */
+  font-family: Arial, sans-serif;
+}
 
-/* Your CSS Code here. */
+/* Give space between buttons */
+button {
+  margin: 8px 0;
+}
+
+/* Optional: Add shadow effect to buttons */
+button.btn {
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Hover effect */
+button.btn:hover:not(:disabled) {
+  transform: scale(1.03);
+  transition: transform 0.2s ease;
+}
